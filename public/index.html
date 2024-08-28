@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     <!--Page Title-->
-    <title>Namari - Free Landing Page Template</title>
+    <title>SUTRA CAPTIAL</title>
 
     <!--Meta Keywords and Description-->
     <meta name="keywords" content="">
@@ -28,6 +28,12 @@
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <style>
+      .page-border {
+        display: none; /* This will hide the border completely */
+      }
+    </style>
 </head>
 <body>
 
@@ -40,6 +46,31 @@
     </div>
 </div>
 <!--End of Preloader-->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "S&P BSE SME IPO INDEXBOM: BSE-SMEIPO",
+        "proName": "BSE:SMEIPO"
+      },
+      {
+        "description": "BSE SENSEX",
+        "proName": "BSE:SENSEX"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
 
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
     <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
@@ -59,11 +90,11 @@
                     <div id="logo">
 
                         <!--Logo that is shown on the banner-->
-                        <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                        <div id="banner-logo" style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 900;">SUTRA CAPITAL</div>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                        <div id="navigation-logo" style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 900;">SUTRA CAPITAL</div>
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -97,9 +128,6 @@
                             <li>
                                 <a href="#about">About</a>
                             </li>
-                            <!--li>
-                                <a href="#gallery">Gallery</a>
-                            </li-->
                             <li>
                                 <a href="#services">Services</a>
                             </li>
@@ -130,7 +158,7 @@
                 </div>
 
                 <!--Call to Action-->
-                <a href="#" class="button">Contact Us</a>
+                <a href="#contact" class="button" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({behavior: 'smooth'});">Contact Us</a>
                 <!--End Call to Action-->
 
             </div>
@@ -162,13 +190,12 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-html5 fa-2x"></i>
+                            <i class="fa fa-bar-chart fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>HTML5 &amp; CSS3</h4>
-                            <p>Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro
-                                neglegentur iudico</p>
+                            <h4>Data-Driven Insights</h4>
+                            <p>We provide well researched data-driven insights into Indian SMEs, enabling investors to make informed decisions.</p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -177,13 +204,12 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-bolt fa-2x"></i>
+                            <i class="fa fa-check-circle fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
                             <h4>Easy to Use</h4>
-                            <p>Cu vero ipsum vim, doctus facilisi sea in. Eam ex falli honestatis repudiandae, sit
-                                detracto mediocrem disputationi</p>
+                            <p>Our platform is designed to be user-friendly, making it easy for investors to access and understand the data they need.</p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -192,13 +218,12 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-tablet fa-2x"></i>
+                            <i class="fa fa-bar-chart fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Fully Responsive</h4>
-                            <p>Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
-                                nemore vivendum</p>
+                            <h4>Important Key Performance Indicators</h4>
+                            <p>With hundreds of SME IPOs coming in line, we provide most important KPIs for investors to compare and make investment decisions.</p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -207,13 +232,12 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-rocket fa-2x"></i>
+                            <i class="fa fa-clipboard fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Parallax Effect</h4>
-                            <p>Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
-                                nemore vivendum</p>
+                            <h4>On Field Research</h4>
+                            <p>We conduct on field research on these SME companies including client reviews and a conference call to get first hand scrutinized data.</p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -226,21 +250,70 @@
         </section>
         <!--End of Introduction-->
 
+        <!--Ticker Tape Widget Section-->
+        <section id="ticker-tape" class="scrollto clearfix" style="height: 90vh; margin-top: -40px; margin-bottom: 20px;">
+            <div class="row clearfix" style="height: 100%;">
+                <div class="col-1" style="height: 100%;">
+                    <div class="section-heading">
+                        <h3>MARKET UPDATES</h3>
+                        <h2 class="section-title">Real-Time S&P BSE SME IPO INDEX</h2>
+                    </div>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+            {
+            "symbols": [
+              [
+                "BSE:SMEIPO|1D"
+              ]
+            ],
+            "chartOnly": false,
+            "width": "100%",
+            "height": "100%",
+            "locale": "en",
+            "colorTheme": "dark",
+            "autosize": true,
+            "showVolume": false,
+            "showMA": false,
+            "hideDateRanges": false,
+            "hideMarketStatus": false,
+            "hideSymbolLogo": false,
+            "scalePosition": "right",
+            "scaleMode": "Normal",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+            "fontSize": "10",
+            "noTimeScale": false,
+            "valuesTracking": "1",
+            "changeMode": "price-and-percent",
+            "chartType": "area",
+            "maLineColor": "#2962FF",
+            "maLineWidth": 1,
+            "maLength": 9,
+            "headerFontSize": "medium",
+            "backgroundColor": "rgba(178, 181, 190, 0.0)",
+            "widgetFontColor": "rgba(0, 0, 0, 1)",
+            "lineWidth": 2,
+            "lineType": 0,
+            "dateRanges": [
+              "1d|1",
+              "1m|30",
+              "3m|60",
+              "12m|1D",
+              "60m|1W",
+              "all|1M"
+            ],
+            "lineColor": "rgba(0, 0, 0, 1)"
+          }
+            </script>
+          </div>
+                             
+                        </div>
+                    </div>
+                </section>
 
-        <!--Gallery-->
-        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
-                 data-featherlight-filter="a">
-
-                <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.1s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page" style="width: calc(100% - 10px); height: auto; margin: 5px;"/></a>
-                <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page" style="width: calc(100% - 10px); height: auto; margin: 5px;"/></a>
-                <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.9s"><img src="images/gallery-images/gallery-image-5.jpeg" alt="Landing Page" style="width: calc(100% - 10px); height: 272px; margin: 5px;"/></a>
-
-        </aside>
-        <!--End of Gallery-->
-
+        <!--End of Ticker Tape Widget Section-->        
 
         <!--Content Section-->
         <div id="services" class="scrollto clearfix">
@@ -250,14 +323,12 @@
 
                 <!--Content Left Side-->
                 <div class="col-3">
-                    <!--User Testimonial-->
+                    <!--Quote on investment-->
                     <blockquote class="testimonial text-right bigtest">
-                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua</q>
-                        <footer>— John Doe, Happy Customer</footer>
+                        <q>It's not whether you're right or wrong that's important, but how much money you make when you're right and how much you lose when you're wrong."</q>
+                        <footer>— George Soros</footer>
                     </blockquote>
-                    <!-- End of Testimonial-->
+                    <!-- End of Quote on investment-->
 
                 </div>
                 <!--End Content Left Side-->
@@ -267,20 +338,20 @@
                     <div class="section-heading">
                         <h3>BELIEVING</h3>
                         <h2 class="section-title">Focusing On What Matters Most</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                        <p class="section-subtitle">SME IPOs, like regular IPOs, are offered by Small and Medium Enterprises to raise capital from the public and list their shares on the stock exchanges. 
+                            Once the IPO is over, SME stocks are traded on the stock exchange!</p>
                     </div>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo.
+                    <p>with <strong>SME IPOs in 2024, </strong>The S&P BSE SME IPO index, which tracks SME IPOs, has increased by a staggering <strong>218%</strong> in the past year.
+                        This is a testament to the growing interest in investors in the SME asset category on the indian growth story. 
+
                     </p>
                     <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!
+                        With so many SME IPOs coming up, choosing the right one that too with such a minimal data and research is not only hard but also risky. 
+                        With Sutra Capital, we help you with our proprietary research and data analytics to choose the right SME IPO. Backed by on field research, founder calls
+                        and client reviews on the companies, helping you make the right investment decision. 
                     </p>
                     <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                    <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
+                    <a href="#" data-videoid="/" data-videosite="youtube" class="button video link-lightbox">
                         WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -296,6 +367,21 @@
         </div>
         <!--End of Content Section-->
 
+        <!--Gallery-->
+        <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+                 data-featherlight-filter="a">
+
+                <a href="images/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.1s"><img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page" style="width: calc(100% - 10px); height: auto; margin: 5px;"/></a>
+                <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page" style="width: calc(100% - 10px); height: auto; margin: 5px;"/></a>
+                <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.9s"><img src="images/gallery-images/gallery-image-5.jpeg" alt="Landing Page" style="width: calc(100% - 10px); height: 272px; margin: 5px;"/></a>
+
+        </aside>
+        <!--End of Gallery-->
+
+        
         <!--Contact Section-->
         <section id="contact" class="scrollto clearfix contact-section">
             <div class="row clearfix">
@@ -311,9 +397,9 @@
                 <div class="col-2-3 contact-info-container">
                     <div class="contact-info">
                         <h3>Contact Information</h3>
-                        <p><strong>Email:</strong> info@example.com</p>
-                        <p><strong>Phone:</strong> +91 98765 43210</p>
-                        <p><strong>Address:</strong> 123 Main St, City, Country</p>
+                        <p><strong>Email:</strong> nithin@sutracapital.com</p>
+                        <p><strong>Phone:</strong> +91 91108 15284</p>
+                        <p><strong>Address:</strong> #148, 2nd Floor, 2nd Avenue, Koramangala,<br> Bengaluru, Karnataka 560034</p>
                     </div>
                 </div>
 
@@ -329,7 +415,7 @@
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
 
-            <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
+            <p id="copyright" class="col-2">Made with ❤️ in Bengaluru</p>
 
             <!--Social Icons in Footer-->
             <ul class="col-2 social-icons">
